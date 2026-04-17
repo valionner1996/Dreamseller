@@ -464,4 +464,350 @@ fbq('track', 'PageView');
     border-top: 1px solid #fde68a;
     border-bottom: 1px solid #fde68a;
     text-align: center;
-    padding: 8
+    padding: 80px 24px;
+  }
+
+  .cta-section h2 { color: var(--blue-deep); margin-bottom: 14px; }
+  .cta-section p { font-size: 17px; color: var(--gray-600); max-width: 560px; margin: 0 auto 36px; }
+
+  .form-section { background: var(--gray-50); padding: 80px 24px; }
+
+  .form-wrapper {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.09);
+    overflow: hidden;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .form-header {
+    background: linear-gradient(135deg, var(--blue-deep), var(--blue-main));
+    color: white;
+    padding: 36px 40px;
+    text-align: center;
+  }
+
+  .form-header h2 { color: white; margin-bottom: 10px; font-size: 26px; }
+  .form-header p { color: rgba(255,255,255,0.82); font-size: 15px; line-height: 1.7; }
+
+  form { padding: 36px 40px; }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  @media (max-width: 560px) {
+    .form-row { grid-template-columns: 1fr; }
+    form { padding: 24px 20px; }
+    .form-header { padding: 28px 20px; }
+  }
+
+  .form-group { margin-bottom: 20px; }
+
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 8px;
+  }
+
+  .opt { font-weight: 400; color: var(--gray-600); font-size: 12px; }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    color: var(--gray-800);
+    background: var(--gray-50);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    direction: rtl;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: var(--blue-main);
+    box-shadow: 0 0 0 3px rgba(20,82,184,0.1);
+    background: white;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--blue-main);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'Cairo', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 16px rgba(20,82,184,0.3);
+    margin-top: 8px;
+  }
+
+  .submit-btn:hover { background: var(--blue-deep); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(20,82,184,0.4); }
+  .submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+
+  .form-note {
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray-600);
+    margin-top: 14px;
+  }
+
+  footer {
+    background: var(--gray-800);
+    color: rgba(255,255,255,0.65);
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 14px;
+  }
+
+  footer strong { color: white; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo">Dream<span>seller</span></a>
+  <a href="#form" class="nav-cta">ابدأ الآن</a>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">🇲🇦 خدمة مغربية متخصصة في COD</div>
+    <h1>حوّل طلباتك إلى<br><span>مبيعات حقيقية</span><br>مع Dreamseller</h1>
+    <p class="hero-sub">نحن نتكفل بالاتصال بالعملاء، تأكيد الطلبات، وزيادة نسبة التوصيل…<br>لتربح أكثر من نفس الإعلانات</p>
+    <div class="hero-btns">
+      <a href="#form" class="btn-primary">ابدأ الآن — مجاناً</a>
+      <a href="#how" class="btn-outline">كيف نعمل؟</a>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stat"><span class="num">+85%</span><span class="lbl">نسبة تأكيد الطلبات</span></div>
+      <div class="hero-stat"><span class="num">-60%</span><span class="lbl">الطلبات الوهمية</span></div>
+      <div class="hero-stat"><span class="num">+40%</span><span class="lbl">زيادة في الأرباح</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="problem">
+  <div class="container">
+    <span class="section-tag red">المشكلة</span>
+    <h2>هل تعاني من هذه المشاكل؟</h2>
+    <p class="section-sub">إذا كنت تشغّل إعلانات فيسبوك وتبيع بالدفع عند الاستلام في المغرب، فأنت تعرف هذه المشاكل جيداً</p>
+    <div class="problem-headline">تدفع للإعلانات… لكن الأرباح لا تأتي — لماذا؟</div>
+    <div class="pain-grid">
+      <div class="pain-card"><div class="pain-icon">💸</div><div><h3>طلبات وهمية تضيع ميزانيتك</h3><p>تشتري ليدات بثمن غالي، ثم تكتشف أن نصفها لم يكن جاداً. المال يضيع بلا رجعة.</p></div></div>
+      <div class="pain-card"><div class="pain-icon">📉</div><div><h3>نسبة تأكيد ضعيفة</h3><p>طلبات كثيرة، لكن التأكيدات قليلة. النسبة لا تتجاوز 40% وأنت تعاني في كل حملة.</p></div></div>
+      <div class="pain-card"><div class="pain-icon">📵</div><div><h3>زبناء لا يردون على الهاتف</h3><p>تتصل مرة، مرتين، ثلاثة… لا رد. العميل يختفي وأنت تخسر وقتك وفلوسك.</p></div></div>
+      <div class="pain-card"><div class="pain-icon">📦</div><div><h3>نسبة إرجاع عالية</h3><p>الطرد يصل ثم يرجع. تكاليف الشحن مزدوجة والمنتج عاد بلا فائدة.</p></div></div>
+      <div class="pain-card"><div class="pain-icon">🔥</div><div><h3>خسارة في كل حملة إعلانية</h3><p>ROAS ضعيف، تكاليف عالية، وفي النهاية الربح يذهب للإعلانات لا لجيبك.</p></div></div>
+      <div class="pain-card"><div class="pain-icon">⏰</div><div><h3>ضياع الوقت في التواصل</h3><p>أنت تدير الإعلانات، المتجر، والمنتجات… ومن يتصل بالعملاء؟ لا أحد.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="solution">
+  <div class="container">
+    <span class="section-tag">الحل</span>
+    <h2>الحل مع Dreamseller</h2>
+    <p class="section-sub">نحن نتولى ما هو صعب عليك — التواصل مع العملاء وتأكيد الطلبات باحترافية</p>
+    <div class="solution-intro">
+      <p>نحن فريق مغربي متخصص في تأكيد الطلبات الهاتفية وإقناع الزبناء بشراء المنتج. نتصل بكل عميل بعد الطلب مباشرة، نؤكد معه بطريقة احترافية، ونرفع نسبة التوصيل — لتحصل أنت على أرباح حقيقية من نفس الإعلانات.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card"><span class="benefit-icon">⚡</span><h3>اتصال سريع</h3><p>نتصل بالعميل خلال دقائق من إرسال الطلب</p></div>
+      <div class="benefit-card"><span class="benefit-icon">✅</span><h3>تأكيد احترافي</h3><p>أسلوب تواصل محترف يطمئن العميل ويثبّت الطلب</p></div>
+      <div class="benefit-card"><span class="benefit-icon">🎯</span><h3>إقناع وتقليل تراجع</h3><p>نعالج الاعتراضات ونحوّل التردد إلى تأكيد</p></div>
+      <div class="benefit-card"><span class="benefit-icon">📈</span><h3>رفع نسبة التوصيل</h3><p>طلبات مؤكدة = شحنات ناجحة = أرباح حقيقية</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="container">
+    <span class="section-tag gold">العملية</span>
+    <h2>كيف نعمل؟</h2>
+    <p class="section-sub">4 خطوات بسيطة تفصلك عن نسبة تأكيد أعلى وأرباح أكثر</p>
+    <div class="steps-container">
+      <div class="step"><div class="step-num">1</div><h3>الزبون يملأ الطلب</h3><p>العميل يزور متجرك ويملأ نموذج الطلب كالمعتاد</p></div>
+      <div class="step"><div class="step-num">2</div><h3>فريقنا يتصل مباشرة</h3><p>في أقل من 10 دقائق، نتصل بالعميل باسم علامتك التجارية</p></div>
+      <div class="step"><div class="step-num">3</div><h3>نؤكد ونقنع</h3><p>نؤكد الطلب، نعالج أي تردد، ونضمن أن العميل جاهز للاستلام</p></div>
+      <div class="step"><div class="step-num">4</div><h3>شحن ناجح ✓</h3><p>طلبك يُشحن بثقة عالية ونسبة إرجاع منخفضة</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="results">
+  <div class="container">
+    <span class="section-tag" style="background:rgba(255,255,255,0.15);color:var(--gold);">النتائج</span>
+    <h2>ماذا ستحصل عليه؟</h2>
+    <p class="section-sub">أرقام حقيقية من متاجر تعمل معنا</p>
+    <div class="results-grid">
+      <div class="result-card"><span class="result-pct">+85%</span><h3>نسبة تأكيد أعلى</h3><p>من كل 10 طلبات، أكثر من 8 تتأكد</p></div>
+      <div class="result-card"><span class="result-pct">-65%</span><h3>طلبات وهمية أقل</h3><p>تصفية فعلية للليدات غير الجادة</p></div>
+      <div class="result-card"><span class="result-pct">+40%</span><h3>زيادة في الأرباح</h3><p>بدون زيادة ميزانية الإعلانات</p></div>
+      <div class="result-card"><span class="result-pct">-50%</span><h3>نسبة إرجاع منخفضة</h3><p>عملاء مؤكدون = استلام مضمون</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container">
+    <span class="section-tag green">لماذا Dreamseller؟</span>
+    <h2>فريق تثق به — يفهم سوقك</h2>
+    <p class="section-sub">لسنا كول سنتر عادي — نحن شركاء في نجاح متجرك</p>
+    <div class="trust-grid">
+      <div class="trust-card"><div class="trust-icon">🇲🇦</div><h3>فريق مغربي 100%</h3><p>نتحدث بلغة عملائك — الدارجة، الفرنسية، والعربية. نفهم ثقافة الشراء المحلية.</p></div>
+      <div class="trust-card"><div class="trust-icon">📦</div><h3>خبرة في سوق COD</h3><p>متخصصون في نموذج الدفع عند الاستلام. نعرف كيف نتعامل مع كل نوع من العملاء.</p></div>
+      <div class="trust-card"><div class="trust-icon">🏪</div><h3>نتعامل مع متاجر عديدة</h3><p>شركاء نجاح لعشرات المتاجر في المغرب عبر مختلف المنتجات والمجالات.</p></div>
+      <div class="trust-card"><div class="trust-icon">📊</div><h3>تقارير وشفافية</h3><p>تتابع نتائجك بشكل واضح — نسب التأكيد، الطلبات المرفوضة، والإحصائيات الكاملة.</p></div>
+      <div class="trust-card"><div class="trust-icon">⚡</div><h3>استجابة سريعة</h3><p>نتصل خلال أقل من 10 دقائق من الطلب. السرعة تعني تأكيد أعلى.</p></div>
+      <div class="trust-card"><div class="trust-icon">🤝</div><h3>شراكة طويلة المدى</h3><p>نجاحك هو نجاحنا. نعمل كامتداد لفريقك، لا كخدمة خارجية.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>ابدأ الآن وطور تجارتك</h2>
+    <p>كل يوم تأخير = طلبات ضائعة وأموال ذهبت للمنافسين. خذ الخطوة الأولى اليوم.</p>
+    <a href="#form" class="btn-primary" style="font-size:18px; padding:16px 48px;">احجز مكانك الآن</a>
+  </div>
+</section>
+
+<section class="form-section" id="form">
+  <div class="container">
+    <div class="form-wrapper">
+      <div class="form-header">
+        <h2>تواصل معنا الآن</h2>
+        <p>املأ النموذج وسيتواصل معك فريقنا خلال أقل من ساعة لشرح كيف يمكننا مضاعفة أرباحك</p>
+      </div>
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" placeholder="مثال: أحمد العمراني" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" placeholder="06XXXXXXXX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="store">اسم المتجر أو الرابط</label>
+          <input type="text" id="store" placeholder="mystore.myshopify.com" required>
+        </div>
+        <div class="form-group">
+          <label for="products">نوع المنتجات</label>
+          <select id="products" required>
+            <option value="" disabled selected>اختر نوع المنتجات</option>
+            <option>ملابس وأزياء</option>
+            <option>إكسسوارات ومجوهرات</option>
+            <option>منتجات العناية والجمال</option>
+            <option>إلكترونيات وأجهزة</option>
+            <option>منزل ومطبخ</option>
+            <option>رياضة واللياقة</option>
+            <option>أخرى</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="orders">عدد الطلبات اليومية <span class="opt">(اختياري)</span></label>
+          <select id="orders">
+            <option value="" disabled selected>اختر العدد التقريبي</option>
+            <option>أقل من 20 طلب</option>
+            <option>20 - 50 طلب</option>
+            <option>50 - 100 طلب</option>
+            <option>أكثر من 100 طلب</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">أرسل الطلب — سنتواصل معك قريباً ✓</button>
+        <p class="form-note">🔒 معلوماتك محمية ولن تُشارك مع أي طرف آخر</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Dreamseller</strong> — خدمة تأكيد الطلبات المغربية</p>
+  <p style="margin-top: 8px;">جميع الحقوق محفوظة &copy; 2025 Dreamseller</p>
+</footer>
+
+<script>
+const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwZ4GyNxXQRgba1kD2I7tgzQZiWOiomch-pRd8ucAnkcryIohvhcsSUmxjd16EvIuII/exec";
+
+async function handleSubmit(e) {
+  e.preventDefault();
+
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = "جاري الإرسال...";
+  btn.disabled = true;
+  btn.style.opacity = "0.75";
+
+  const payload = {
+    name:     document.getElementById('name').value.trim(),
+    phone:    document.getElementById('phone').value.trim(),
+    store:    document.getElementById('store').value.trim(),
+    products: document.getElementById('products').value,
+    orders:   document.getElementById('orders').value || "لم يحدد"
+  };
+
+  try {
+    await fetch(WEBHOOK_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+  } catch (err) {}
+
+  // ✅ Meta Pixel Lead event
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Lead', {
+      content_name: 'Dreamseller Form',
+      content_category: payload.products,
+      value: 0,
+      currency: 'MAD'
+    });
+  }
+
+  // ✅ Redirect to thank you page
+  window.location.href = 'merci.html';
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.pain-card, .benefit-card, .step, .result-card, .trust-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
